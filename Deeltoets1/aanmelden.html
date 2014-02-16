@@ -28,159 +28,185 @@
 			<p>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</p>
 
 			<p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
-			Voor vragen of opmerkingen kunt u contact [link: contact] met ons opnemen.</p>
+			Voor vragen of opmerkingen kunt u <a href="#">contact</a> met ons opnemen.</p>
 
 			<form>
-			<fieldset>
-			<h2>Contactgegevens</h2>
-			<p><label for="naam">Naam*</label> <input type="text" placeholder="John Doe" id="name" required/></p>
+				<fieldset>
+				<legend>Contactgegevens</legend>
+					<p><label for="naam">Naam*</label> <input type="text" placeholder="John Doe" id="name" required/></p>
 			
-			<p><label for="business">Bedrijf</label> <input type="text" id="business"/></p>
+					<p><label for="business">Bedrijf</label> <input type="text" id="business"/></p>
 			
-			<p><label for="street">Straat</label> <input type="text" placeholder="Bakkerstraat" id="street" required/></p>
+					<p><label for="street">Straat</label> <input type="text" placeholder="Bakkerstraat" id="street" required/></p>
 
-			<p><label for="number">Huisnummer</label> <input type="text"placeholder="123" id="number" required/></p>
+					<p><label for="number">Huisnummer</label> <input type="text"placeholder="123" id="number" required/></p>
 
-			<p><label for="zip">Postcode</label> <input type="text" placeholder="1234 aa" id="zip" required pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}"/></p>
+					<p><label for="zip">Postcode</label> <input type="text" placeholder="1234 aa" id="zip" required pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}"/></p>
 
-			<p><label for="country">Plaats</label><input type="text" placeholder="Amsterdam" id="country" required/></p>
+					<p><label for="country">Plaats</label><input type="text" placeholder="Amsterdam" id="country" required/></p>
 
-			<p><label for="tel">Telefoon</label><input type="tel" id="tel" maxlength="10" required/></p>
+					<p><label for="tel">Telefoon</label><input type="tel" id="tel" maxlength="10" required/></p>
 
-			<p><label for= "e-mail">E-mail</label> <input type="email" id="email" placeholder="voorbeeld@mail.nl" required/></p>
+					<p><label for= "e-mail">E-mail</label> <input type="email" id="email" placeholder="voorbeeld@mail.nl" required/></p>
+				</fieldset>
+			</form>
 			
-			<p><label>Ik wil mij aanmelden:
-			<select id="keuze">
-  			<option value="Project">Voor een Project</option>
-  			<option value="Stage">Voor een Stage</option>
-  			</select>
-			</label></p>
+			<form>
+				<fieldset>
+					<legend>Ik wil mijn aanmelden:</legend>
+					<select id="keuze">
+  					<option value="Project">Voor een Project</option>
+  					<option value="Stage">Voor een Stage</option>
+  					</select>
+				</fieldset>
+			</form>	
 
-			<h3>Project</h3>
+			<form>
+				<fieldset>
+					<legend>Project</legend>
 
-			<p><label for="titel">Titel</label> <input type="text" placeholder="Titel project" id="titel" /></p>
+			<ol>
+				<li>
+					<label for="titel">Titel</label> <input type="text" placeholder="Titel project" id="titel" />
+				</li>
 
-
-			<p>
-				<label>Opdrachtomschrijving</label><br>
+			
+				<li>
+					<label>Opdrachtomschrijving</label><br>
           			<textarea id = "myTextArea"
               		rows = "3"
                   	cols = "60" 
                   	placeholder="Tekst hier"></textarea>
-            </p>
+                 </li>
+            
 
-			<p>
-				<label>Doelgroepomschrijving</label><br>
+				<li>
+					<label>Doelgroepomschrijving</label><br>
           			<textarea id = "myTextArea2"
               		rows = "3"
                   	cols = "60"
                   	placeholder="Tekst hier"></textarea>
-            </p>
+            	</li>
 
-            	<p>
-				<label>Doelstelling/intentievanhetproject</label><br>
+            	<li>
+					<label>Doelstelling/intentievanhetproject</label><br>
           			<textarea id = "myTextArea3"
               		rows = "3"
                   	cols = "60"
                   	placeholder="Tekst hier"></textarea>
-            </p>
+            	</li>
 
-            <p><label for="titel">Looptijd</label> <input type="number" placeholder="aantal weken" id="titel" /></p>
+            	<li>	
+            		<label for="titel">Looptijd</label> <input type="number" placeholder="aantal weken" id="titel" /></p>
+            	</li>
 
-            <p>
-            	 <label for="date">Deadline</label><input type="date" type="text" name="date" value=""/>
-            </p>
+            	<li>
+            		<label for="date">Deadline</label><input type="date" type="text" name="date" value=""/>
+            	</li>
+            </ol>
+            
+            		<label>Geschikt voor
+						<select id="studenten">
+  							<option value="Eerstejaars">Eerstejaars studenten</option>
+  							<option value="Tweedejaars">Tweedejaars studenten</option>
+  							<option value="Derdejaars">Derdejaars studenten</option>
+  							<option value="Afstudeer">Afstudeer studenten</option>
+  							<option value="Onbekend">Onbekend</option>
+  						</select>
+					</label><br>
+			
 
-            <p><label>Geschikt voor
-			<select id="studenten">
-  			<option value="Eerstejaars">Eerstejaars studenten</option>
-  			<option value="Tweedejaars">Tweedejaars studenten</option>
-  			<option value="Derdejaars">Derdejaars studenten</option>
-  			<option value="Afstudeer">Afstudeer studenten</option>
-  			<option value="Onbekend">Onbekend</option>
-  			</select>
-			</label></p>
 
-
-			<p>
-				<label>Opmerking</label><br>
+				
+					<label>Opmerking</label><br>
           			<textarea id = "myTextArea"
               		rows = "3"
                   	cols = "60" 
                   	placeholder="Verdere opmerkingen..."></textarea>
-            </p>
+            	</fieldset>
+            </form>
 
-			<h4>Stage</h4>
+            <form>
+            	<fieldset>
+					<legend>Stage</legend>
 
-			<p><label>Geschikt voor
-			<select id="studenten2">
-  			<option value="tweedejaars">Tweedejaars studenten</option>
-  			<option value="afstudeer">Afstudeer studenten</option>
-  			<option value="onbekend">Onbekend</option>
-  			</select>
-			</label></p>
+						<label>Geschikt voor
+							<select id="studenten2">
+  								<option value="tweedejaars">Tweedejaars studenten</option>
+  								<option value="afstudeer">Afstudeer studenten</option>
+  								<option value="onbekend">Onbekend</option>
+  							</select>
+						</label><br>
 
-			<p><label>Hoe lang is de stage?
-			<select id="duur">
-  			<option value="10">10 weken</option>
-  			<option value="20">20 weken</option>
-  			</select>
-			</label></p>
+			<ol>
+				<li>
+					<label>Hoe lang is de stage?
+						<select id="duur">
+  							<option value="10">10 weken</option>
+  							<option value="20">20 weken</option>
+  						</select>
+					</label>
+				</li>
+
+				<li>
+            	 	<label for="date">Begin Datum</label><input type="date" type="text" name="date" value=""/>
+            	</li>
+            </ol>
 
 
-
-			<p>
-            	 <label for="date">Begin Datum</label><input type="date" type="text" name="date" value=""/>
-            </p>
-
-
-            <p>
 				<label>Beschrijving werkzaamheden</label><br>
           			<textarea id = "myTextArea"
               		rows = "3"
                   	cols = "60" 
                   	placeholder="Beschrijving stagewerkzaamheden"></textarea>
-            </p>
 
-            <h5>Beschrijving stagebedrijf</h5>
+            <p>Beschrijving stagebedrijf</p>
 
-            <p><label for="business">Bedrijfsnaam</label> <input type="text" id="business"/></p>
+            <ol>
+            	<li>
+            		<label for="business">Bedrijfsnaam</label> <input type="text" id="business"/>
+            	</li>
 
-            <p><label for="street">Adres</label> <input type="text" placeholder="Bakkerstraat 23" id="address" required/></p>
+            	<li>
+            		<label for="street">Adres</label> <input type="text" placeholder="Bakkerstraat 23" id="address" required/>
+            	</li>
 
-            <p><label for="zip">Postcode</label> <input type="text" placeholder="1234 aa" id="zip" required pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}"/></p>
+            	<li>
+            		<label for="zip">Postcode</label> <input type="text" placeholder="1234 aa" id="zip" required pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}"/>
+            	</li>
 
-            <p><label for="country">Plaats</label><input type="text" placeholder="Amsterdam" id="country" required/></p>
+            	<li>
+            		<label for="country">Plaats</label><input type="text" placeholder="Amsterdam" id="country" required/>
+            	</li>
 
-            <p><label for="sector">Sector</label><input type="text" placeholder="Communicatie" id="sector" required/></p>
+            	<li>
+            		<label for="sector">Sector</label><input type="text" placeholder="Communicatie" id="sector" required/>
+            	</li>
 
-            <p><label for="core">Core Business</label><input type="text" id="country" required/></p>
+            	<li>
+            		<label for="core">Core Business</label><input type="text" id="country" required/>
+            	</li>
 
-            <p>
+            
 				<label>Opmerking</label><br>
           			<textarea id = "myTextArea"
               		rows = "3"
                   	cols = "60" 
-                  	placeholder="Verdere opmerkingen..."></textarea>
-            </p>
-
+                  	placeholder="Verdere opmerkingen...">
+                  	</textarea><br>
+            
 
 			<input type="submit" value="Submit Order" id="sub"/> 
        		<input type="reset" value="Reset Form"/><br>
 
 
-			</fieldset>
+			
+				</fieldset>
 			</form>
 
+		</article>
 			
-
-		</section>
-		<aside>
-			
-		</aside> <!-- Wanneer dit niets te maken heeft met de content in main, kan je een div gebruiken. Dit wordt gebruikt om een element te stylen-->
-
-		<footer>
-			
-		</footer>
+	</section>
+		
 </body>
 </html>
