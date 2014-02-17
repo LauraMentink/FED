@@ -33,21 +33,21 @@
 			<form>
 				<fieldset>
 				<legend>Contactgegevens</legend>
-					<p><label for="naam">Naam*</label> <input type="text" placeholder="John Doe" id="name" required/></p>
+					<label for="name">Naam</label> <input type="text" placeholder="John Doe" id="name" required/><br>
 			
-					<p><label for="business">Bedrijf</label> <input type="text" id="business"/></p>
+					<label for="business">Bedrijf</label> <input type="text" id="business"/><br>
 			
-					<p><label for="street">Straat</label> <input type="text" placeholder="Bakkerstraat" id="street" required/></p>
+					<label for="street">Straat</label> <input type="text" placeholder="Bakkerstraat" id="street" required/><br>
 
-					<p><label for="number">Huisnummer</label> <input type="text"placeholder="123" id="number" required/></p>
+					<label for="number">Huisnummer</label> <input type="text" placeholder="123" id="number" required/><br>
 
-					<p><label for="zip">Postcode</label> <input type="text" placeholder="1234 aa" id="zip" required pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}"/></p>
+					<label for="zip">Postcode</label> <input type="text" placeholder="1234 aa" id="zip" required pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}"/><br>
 
-					<p><label for="country">Plaats</label><input type="text" placeholder="Amsterdam" id="country" required/></p>
+					<label for="country">Plaats</label><input type="text" placeholder="Amsterdam" id="country" required/><br>
 
-					<p><label for="tel">Telefoon</label><input type="tel" id="tel" maxlength="10" required/></p>
+					<label for="tel">Telefoon</label><input type="tel" id="tel" maxlength="10" required/><br>
 
-					<p><label for= "e-mail">E-mail</label> <input type="email" id="email" placeholder="voorbeeld@mail.nl" required/></p>
+					<label for= "email">E-mail</label> <input type="email" id="email" placeholder="voorbeeld@mail.nl" required/><br>
 				</fieldset>
 			</form>
 			
@@ -97,11 +97,11 @@
             	</li>
 
             	<li>	
-            		<label for="titel">Looptijd</label> <input type="number" placeholder="aantal weken" id="titel" /></p>
+            		<label for="titel">Looptijd</label> <input type="number" placeholder="aantal weken"/><br>
             	</li>
 
             	<li>
-            		<label for="date">Deadline</label><input type="date" type="text" name="date" value=""/>
+            		<label for="date">Deadline</label><input type="date" name="date" value=""/>
             	</li>
             </ol>
             
@@ -119,9 +119,7 @@
 
 				
 					<label>Opmerking</label><br>
-          			<textarea id = "myTextArea"
-              		rows = "3"
-                  	cols = "60" 
+          			<textarea name = "myTextArea"
                   	placeholder="Verdere opmerkingen..."></textarea>
             	</fieldset>
             </form>
@@ -149,22 +147,20 @@
 				</li>
 
 				<li>
-            	 	<label for="date">Begin Datum</label><input type="date" type="text" name="date" value=""/>
+            	 	<label for="date">Begin Datum</label><input type="date" name="date" value=""/>
             	</li>
             </ol>
 
 
 				<label>Beschrijving werkzaamheden</label><br>
-          			<textarea id = "myTextArea"
-              		rows = "3"
-                  	cols = "60" 
+          			<textarea name = "myTextArea"
                   	placeholder="Beschrijving stagewerkzaamheden"></textarea>
 
             <p>Beschrijving stagebedrijf</p>
 
             <ol>
             	<li>
-            		<label for="business">Bedrijfsnaam</label> <input type="text" id="business"/>
+            		<label for="business">Bedrijfsnaam</label> <input type="text"/>
             	</li>
 
             	<li>
@@ -172,11 +168,11 @@
             	</li>
 
             	<li>
-            		<label for="zip">Postcode</label> <input type="text" placeholder="1234 aa" id="zip" required pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}"/>
+            		<label for="zip">Postcode</label> <input type="text" placeholder="1234 aa" required pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}"/>
             	</li>
 
             	<li>
-            		<label for="country">Plaats</label><input type="text" placeholder="Amsterdam" id="country" required/>
+            		<label for="country">Plaats</label><input type="text" placeholder="Amsterdam" id="place" required/>
             	</li>
 
             	<li>
@@ -184,16 +180,16 @@
             	</li>
 
             	<li>
-            		<label for="core">Core Business</label><input type="text" id="country" required/>
+            		<label for="core">Core Business</label><input type="text" id="corebusiness" required/>
             	</li>
 
-            
+            	<li>
 				<label>Opmerking</label><br>
-          			<textarea id = "myTextArea"
-              		rows = "3"
-                  	cols = "60" 
+          			<textarea name = "myTextArea"
                   	placeholder="Verdere opmerkingen...">
                   	</textarea><br>
+                </li>
+            </ol>
             
 
 			<input type="submit" value="Submit Order" id="sub"/> 
